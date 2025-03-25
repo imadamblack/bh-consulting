@@ -10,69 +10,61 @@ import { restrictNumber } from '../utils/formValidators';
 
 const formSteps = [
   {
-    name: 'intention',
-    title: `Compártenos un poco más sobre ti para perfilarte mejor`,
-    description: '¿Con qué fin estás buscando comprar?',
+    name: 'title',
+    title: `Compártenos un poco más sobre tu empresa para perfilarte mejor`,
+    description: '¿Qué puesto desempeñas en la empresa?',
     type: 'radio',
     options: [
-      {value: 'inversion', label: 'Inversión'},
-      {value: 'vivienda', label: 'Quiero vivir ahí'},
+      {value: 'director', label: 'Dirección General'},
+      {value: 'administracion', label: 'Administración'},
+      {value: 'recursos-humanos', label: 'Gerencia Recursos Humanos'},
+      {value: 'producción', label: 'Gerencia Producción'},
+      {value: 'otro', label: 'Otro'},
     ],
     cols: 1,
     inputOptions: {required: true}
   },
   {
-    name: 'budget',
-    title: '¿En cuál de estos rangos te sientes cómodo para realizar tu inversión?',
+    name: 'companySize',
+    title: '¿Con cuántos colaboradores cuenta la empresa?',
     description: 'Selecciona una opción por favor',
     type: 'radio',
     options: [
-      {value: '<4.5M', label: 'Menos de 4.5mdp'},
-      {value: '4.5M-7M', label: 'De $4.5mdp a 6.9mdp (1 recámara)'},
-      {value: '7M-10M', label: 'De $7mdp - $10mdp (2 recámaras)'},
-      {value: '11M-15M', label: 'De $11mdp - $15mdp (3 recamaras)'},
-      {value: '15M+', label: 'Más de $15 mdp (Pent House y Garden House)'},
+      {value: '<10', label: 'Menos de 10'},
+      {value: '10-50', label: 'De 10 a 50'},
+      {value: '50-100', label: 'De 50 a 100'},
+      {value: '100+', label: 'Más de 100'},
     ],
     cols: 1,
     inputOptions: {required: true}
   },
   {
-    name: 'financing',
-    title: '¿Cómo planeas realizar tu inversión?',
+    name: 'area',
+    title: '¿En qué área te interesa certificarte?',
     type: 'radio',
     options: [
-      {value: 'privado', label: 'Financiamiento del desarrollador'},
-      {value: 'hipotecario', label: 'Crédito hipotecario'},
-      {value: 'contado', label: 'De contado'},
+      {value: 'calidad', label: 'Calidad'},
+      {value: 'inocuidad', label: 'Inocuidad'},
+      {value: 'medio-ambiente', label: 'Medio ambiente'},
+      {value: 'seguridad-salud', label: 'Seguridad y Salud ocupacional'},
+      {value: 'ti', label: 'Tecnologías de la información'},
     ],
     cols: 1,
     inputOptions: {required: true}
   },
-  {
-    name: 'contactMethod',
-    title: '¿Cómo prefieres que te contactemos?',
-    type: 'radio',
-    options: [
-      {value: 'whatsapp', label: 'WhatsApp'},
-      {value: 'phone', label: 'Llamada telefónica'},
-      {value: 'videocall', label: 'Videollamada'},
-    ],
-    cols: 3,
-    inputOptions: {required: true}
-  },
-  {
-    name: 'commitment',
-    title: 'Estás a punto de programar una sesión con nosotros ¿contamos con tu asistencia puntual?',
-    description: 'Dado al volumen de solicitudes que tenemos, en ocasiones es complicado reprogramar.',
-    type: 'radio',
-    options: [
-      {value: 'si', label: 'Claro que sí!'},
-      {value: 'recordar', label: 'Recuérdenme por favor'},
-      {value: 'no', label: 'No sé'},
-    ],
-    cols: 3,
-    inputOptions: {required: true}
-  },
+  // {
+  //   name: 'commitment',
+  //   title: 'Estás a punto de programar una sesión con nosotros ¿contamos con tu asistencia puntual?',
+  //   description: 'Dado al volumen de solicitudes que tenemos, en ocasiones es complicado reprogramar.',
+  //   type: 'radio',
+  //   options: [
+  //     {value: 'si', label: 'Claro que sí!'},
+  //     {value: 'recordar', label: 'Recuérdenme por favor'},
+  //     {value: 'no', label: 'No sé'},
+  //   ],
+  //   cols: 3,
+  //   inputOptions: {required: true}
+  // },
 ];
 
 export default function Survey() {
