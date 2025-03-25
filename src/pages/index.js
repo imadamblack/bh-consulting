@@ -16,7 +16,7 @@ import i08 from '../../public/landing/08.png';
 import i09 from '../../public/landing/09.png';
 import i10 from '../../public/landing/10.png';
 import i11 from '../../public/landing/11.png';
-import clientes1 from '../../public/landing/Nuestros-clientes-a.jpg';
+import clientes1 from '../../public/landing/nuestros-clientes-a.jpg';
 import clientes2 from '../../public/landing/nuestros-clientes-b.jpg';
 import clientes3 from '../../public/landing/nuestros-clientes-c.jpg';
 import clientes4 from '../../public/landing/nuestros-clientes-d.jpg';
